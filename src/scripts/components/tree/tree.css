@@ -1,0 +1,402 @@
+.tree {
+  height: 86%;
+  background-image: url(../../../../public/bg.jpg);
+}
+
+.blur {
+  background: rgba(22, 41, 41, 0.5);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  min-height: calc(80vh - 140px);
+  width: 100%;
+}
+
+.wrap-container {
+  display: flex;
+}
+
+/* Tree */
+.choosing-tree-wrap {
+  width: 27%;
+  height: 80vh;
+
+}
+
+.snow-song-wrap {
+  margin: 30px 0;
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../../../public/svg/mute.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  transition: .3s;
+}
+
+.snow:hover,
+.song:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.snow {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../../../public/svg/snow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: .3s;
+}
+
+
+.active-snow {
+  filter: saturate(1.5) brightness(.8);
+}
+
+.tree-header {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.trees-wrap {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.christmas-tree {
+  width: 115px;
+  height: 115px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  background-size: auto 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .3s;
+}
+
+.christmas-tree:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.back-trees-wrap {
+  margin-top: 30px;
+}
+
+.back-tree-all {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.back-tree {
+  width: 65px;
+  height: 65px;
+
+  border: 1px solid #cccc;
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, .5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: .3s;
+}
+
+.back-tree:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.garland-wrap {
+  margin-top: 30px;
+}
+
+.garland-all {
+  margin-top: 15px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.color_btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgb(71, 70, 70);
+}
+
+.multicolor_btn {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8);
+  box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #441313 0 -1px 9px, #ccc 0 2px 12px;
+
+
+}
+
+.red_btn {
+  background-color: #F00;
+  box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgb(255 0 0 / 50%) 0 2px 12px;
+}
+
+.blue_btn {
+  background-color: #24E0FF;
+  box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3f8cff 0 2px 14px;
+}
+
+.yellow_btn {
+  background-color: #FF0;
+  box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #ff0 0 2px 12px;
+}
+
+.green_btn {
+  background-color: #ABFF00;
+  box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89ff00 0 2px 12px;
+}
+
+.garland-btn-wrap {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.name-garland-btn {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.on-off-garland_btn {
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(157, 243, 255, 0.2) 100%);
+  backdrop-filter: blur(31px);
+  border-radius: 5px;
+  border: none;
+}
+
+.on-off-garland_btn:hover {
+  cursor: pointer;
+}
+
+.active-garland::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 6px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+/* Tree_Christmas */
+.christmas-tree-wrap {
+  width: 46%;
+  height: 86vh;
+  background-image: url(../../../../public/bg/1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-tree {
+  margin-bottom: 30px;
+  width: 500px;
+  height: 714px;
+
+  background-image: url(../../../../public/tree/1.png);
+  background-size: cover;
+  background-position: center;
+}
+/* Garlad */
+.garland-tree-container {
+  position: absolute;
+  width: 500px;
+  height: 650px;
+
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+
+  /* width: 120px; */
+  height: 120px;
+}
+
+.light {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%; 
+
+
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+
+  
+}
+
+@keyframes red {
+  0% {
+    background-color: rgb(240, 156, 156);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+  50% {
+    background-color: red;
+    opacity: 1;
+    border-radius: 50%; 
+  }
+  100% {
+    background-color: rgb(240, 156, 156);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+}
+
+@keyframes green {
+  0% {
+    background-color: rgb(125, 238, 125);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+  50% {
+    background-color: green;
+    opacity: 1;
+    border-radius: 50%; 
+  }
+  100% {
+    background-color: rgb(125, 238, 125);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+}
+
+@keyframes yellow {
+  0% {
+    background-color: rgb(241, 241, 159);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+  50% {
+    background-color: yellow;
+    opacity: 1;
+    border-radius: 50%; 
+  }
+  100% {
+    background-color: rgb(241, 241, 159);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+}
+
+@keyframes blue {
+  0% {
+    background-color: rgb(156, 156, 247);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+  50% {
+    background-color: blue;
+    opacity: 1;
+    border-radius: 50%; 
+  }
+  100% {
+    background-color: rgb(156, 156, 247);
+    opacity: 0.5;
+    border-radius: 50%; 
+  }
+}
+/* Toys */
+
+.choosing-toys-wrap {
+  width: 27%;
+  height: 80vh;
+}
+
+.favorite-toys-container {
+  margin-left: 25px;
+}
+
+.favorite-header-wrap {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.number-favorite-toys {
+  margin-left: 20px;
+}
+
+.all-favorite-toys {
+  margin-top: 10px;
+  gap: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favorite-toy {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  background-size: auto 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-img-toy {
+  width: 60px;
+  height: 60px;
+}
+
+.num-favorite-toys {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #24C5DB;
+  border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: #192F2D;
+
+  height: 7%;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav-wrapp {
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 28px;
+}
+
+.github-link:hover {
+  cursor: pointer;
+  color: #278D9F;
+}
+
+.rss_img {
+  max-height: 50px;
+}

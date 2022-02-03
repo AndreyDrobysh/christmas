@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+  z-index: 10;
+
+  background-color: #192F2D;
+
+  height: 7%;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  list-style-type: none
+}
+
+.link-tree,
+.link-toys {
+  transition: .3s;
+}
+
+.header-name-link {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.tree_img {
+  height: 60px;
+  transition: .3s;
+}
+
+.tree_img:hover,
+.link-tree:hover,
+.link-toys:hover {
+  cursor: pointer;
+  filter: invert(57%) sepia(100%) saturate(329%) hue-rotate(
+    141deg) brightness(89%) contrast(90%);
+}
+
+.active {
+  text-decoration: underline;
+  color: #278D9F;
+}
